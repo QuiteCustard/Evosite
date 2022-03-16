@@ -1,0 +1,78 @@
+.logo {
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-left: 13px;
+        font-family: 'merriweather', 'sans-serif';
+        font-weight: 300;
+        color: var(--white);
+        p {
+            font-size: 28px;
+
+            &:nth-child(2) {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 18px;
+
+    .icons {
+        display: flex;
+        gap: 9px;
+    }
+
+    .icon {
+        color: var(--white);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 32px;
+        width: 32px;
+    }
+}
+.menu {
+    width: fit-content;
+    justify-self: center;
+
+    i {
+        font-size: 43px;
+        color: var(--white);
+    }
+}
+
+
+.button {
+    background-color: var(--tertiary);
+    color: white;
+    font-family: 'Montserrat', 'sans-serif';
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    width: 95px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-facebook-f {
+    background-color: #2E3C7E;
+}
+
+.fa-twitter {
+    background-color: #3BA6E5;
+}
+
+.fa-magnifying-glass,
+.fa-phone-flip {
+    background-color: var(--tertiary);
+}

@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background: url(../assets/images/pencils.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    display: grid;
+    margin:16px 16px 0 16px;
+    grid-template-areas: "social social" "logo menu";
+    align-items: center;
+
+    &::before {
+        position: absolute;
+        height:100%;
+        width: 100%;
+        content:'';
+        top:0;
+        left:0;
+        backdrop-filter: brightness(0.8);
+    }
+
+    & > * {
+        z-index: 1;
+    }
+
+    ul {
+        list-style: none;
+    }
+ 
+    .social-media {
+        grid-area: social;
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+}
