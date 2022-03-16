@@ -9,6 +9,9 @@ header {
     background-size: cover;
     background-position: center;
     position: relative;
+    @media (min-width:1024px) {
+        padding: 1rem;
+    }
 }
 
 nav {
@@ -41,5 +44,16 @@ nav {
 
     .logo {
         grid-area: logo;
+    }
+
+    .menu {
+        grid-area: menu;
+    }
+
+    @media (min-width:1024px) {
+        grid-template-areas: "logo social" "menu menu";
+        max-width: 1400px;
+        margin: auto;
+        row-gap: 19px;
     }
 }

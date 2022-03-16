@@ -7,6 +7,7 @@
         font-family: 'merriweather', 'sans-serif';
         font-weight: 300;
         color: var(--white);
+
         p {
             font-size: 28px;
 
@@ -15,40 +16,114 @@
             }
         }
     }
+
+    @media (min-width:1024px) {
+        &>img {
+            height: 72px;
+            width: 72px;
+        }
+    }
 }
 
 .social-media {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: 9px;
     padding-bottom: 18px;
 
     .icons {
         display: flex;
         gap: 9px;
+
+        .icon {
+            color: var(--white);
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 32px;
+            width: 32px;
+        }
+
+        .button {
+            height: 32px;
+            width: 32px;
+        }
+
+        .button > span {
+            display: none;
+        }
+
+        @media (min-width:1024px) {
+
+            .button {
+                width: 136px;
+            }
+            .button > span {
+                display: block;
+            }
+        }
     }
 
-    .icon {
-        color: var(--white);
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 32px;
-        width: 32px;
+    @media (min-width:1024px) {
+        justify-content: flex-end;
+        padding: 0;
     }
 }
+
 .menu {
     width: fit-content;
     justify-self: center;
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
 
-    i {
-        font-size: 43px;
-        color: var(--white);
+    .toggle {
+        display: block;
+
+        @media (min-width:1024px) {
+            display: none;
+        }
+
+        i {
+            font-size: 43px;
+            color: var(--white);
+        }
+    }
+
+    .links-container {
+        width: inherit;
+        display: none;
+
+        .links {
+            display: none;
+
+            a {
+                font-family: 'Montserrat', 'sans-serif';
+                font-weight: 400;
+                font-size: 16px;
+                color: var(--white);
+            }
+
+            .active {
+                color: #FFFFFF78;
+            }
+
+            @media (min-width:1024px) {
+                display: flex;
+                gap: 1rem;
+                width: inherit;
+                justify-content: space-between;
+            }
+        }
+
+        @media (min-width:1024px) {
+            display: block;
+        }
     }
 }
-
 
 .button {
     background-color: var(--tertiary);
@@ -72,7 +147,6 @@
     background-color: #3BA6E5;
 }
 
-.fa-magnifying-glass,
-.fa-phone-flip {
+.fa-magnifying-glass {
     background-color: var(--tertiary);
 }
