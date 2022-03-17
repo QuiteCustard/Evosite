@@ -115,7 +115,6 @@
             display: none;
 
             a {
-                font-family: var(--montserrat);
                 font-weight: 400;
                 font-size: 16px;
                 color: var(--white);
@@ -142,7 +141,6 @@
 .button {
     background-color: var(--tertiary);
     color: white;
-    font-family: var(--montserrat);
     border-radius: 16px;
     font-size: 12px;
     font-weight: 400;
@@ -151,6 +149,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 300ms;
+}
+
+.button:hover, .button:focus {
+    background-color: #b8c6cf;
+    color:var(--tertiary);
 }
 
 .fa-facebook-f {
@@ -172,11 +176,11 @@
     align-items: center;
     color: var(--white);
     padding:0 23px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 
-    h3 {
+    p {
         font-size: 14px;
-        font-family: var(--montserrat);
+  
         font-weight: 400;
 
         @media (min-width:1024px) {
@@ -186,7 +190,6 @@
 
     h2 {
         font-size: 24px;
-        font-family: var(--merriweather);
         font-weight: 700;
         text-align: center;
 
@@ -209,5 +212,63 @@
 }
 
 section {
-    display: grid;
+   
+    img {
+        width:100%;
+    }
+
+    .content {
+        margin:0 15px;
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+            color:var(--grey);
+            font-weight: 300;
+            font-size: 19px;
+            margin-top: 33px;
+            margin-bottom: 9px;
+            font-family: var(--montserrat);
+        }
+    
+        h1 {
+            font-weight: 700;
+            font-size: 33px;
+            color: var(--tertiary);
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 32px;
+            font-size: 17px;
+            color: var(--black);
+            max-width: 291px;
+        }
+
+        .author {
+            margin-top:10px;
+            font-size: 18px;
+            max-width: 211px;
+        }
+
+        .button {
+            font-size: 14px;
+            width: 214px;
+            height:46px;
+            border-radius:40px;
+            align-self: center;
+            margin:30px 0;
+        }
+    }
+}
+
+#news {
+    background-color: var(--tertiary);
+    justify-items: center;
+    
+    h2 {
+        color:var(--white);
+        font-size: 38px;
+        font-weight: 700;
+    }
 }
