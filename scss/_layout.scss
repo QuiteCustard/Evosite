@@ -61,8 +61,13 @@ nav {
 
     @media (min-width:1024px) {
         grid-template-areas: "logo social" "menu menu";
-        padding:0 232px;
         row-gap: 19px;
+    }
+}
+
+@media (min-width:1024px) {
+    header > div, main {
+        padding: 0 232px;
     }
 }
 
