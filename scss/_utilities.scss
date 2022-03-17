@@ -176,7 +176,7 @@
     align-items: center;
     color: var(--white);
     padding:0 23px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     p {
         font-size: 14px;
@@ -241,14 +241,11 @@ section {
         p {
             line-height: 32px;
             font-size: 17px;
-            color: var(--black);
-            max-width: 291px;
         }
 
         .author {
             margin-top:10px;
             font-size: 18px;
-            max-width: 211px;
         }
 
         .button {
@@ -265,7 +262,7 @@ section {
 #news {
     background-color: var(--tertiary);
     justify-items: center;
-    
+
     h2 {
         color:var(--white);
         font-size: 38px;
