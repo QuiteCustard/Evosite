@@ -1,11 +1,27 @@
-a {
-    text-decoration: none;
-}
-
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--merriweather);
 }
 
 p, a {
     font-family: var(--montserrat);
+}
+
+a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--white);
+
+    &:hover,
+    &:focus {
+        color: var(--grey);
+    }
+
+    @media (min-width:1024px){
+        font-size: 16px;
+    }
+}
+
+.active {
+    color: #FFFFFF78;
 }

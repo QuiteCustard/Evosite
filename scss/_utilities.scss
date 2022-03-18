@@ -118,21 +118,6 @@
         .links {
             display: none;
 
-            a {
-                font-weight: 400;
-                font-size: 16px;
-                color: var(--white);
-
-                &:hover,
-                &:focus {
-                    color: var(--grey);
-                }
-            }
-
-            .active {
-                color: #FFFFFF78;
-            }
-
             @media (min-width:1024px) {
                 display: flex;
                 gap: 1rem;
@@ -314,7 +299,7 @@ section {
                 position: absolute;
                 color: var(--white);
                 z-index: 1;
-                top: 160px;
+                top: 214px;
                 left: 20px;
                 display: flex;
                 align-items: center;
@@ -328,7 +313,7 @@ section {
             }
 
             img {
-                height: 200px;
+                height: 258px;
                 object-fit: cover;
                 position: relative;
             }
@@ -435,11 +420,46 @@ footer {
         font-size: 15px;
         margin-top:24px;
         margin-bottom: 15px;
+
         li {
             padding:5px;
         }
+
         strong {
             font-weight: 600;
         }
+    }
+    .contact, .quick-links {
+        padding-bottom: 38px;
+        margin-bottom: 38px;
+        border-bottom: 1px solid #ffffff21;
+    }
+
+
+    i {
+        margin-right: 11px;
+        color: #B7BDC1;
+    }
+
+    .quick-links, .site-information {
+        display: flex;
+        flex-direction: column;
+        gap:18px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    .copyright {
+        margin-bottom: 38px;
+        color: var(--white);
+        font-weight: 400;
+        font-size: 12px;
+    }   
+
+    .footer-note {
+        margin: 50px 1px 20px 0px;
+        color:var(--white);
+        font-weight: 700;
+        font-size: 12px;
     }
 }

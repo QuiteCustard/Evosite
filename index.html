@@ -21,7 +21,7 @@
 <body>
     <header>
         <div>
-            <nav>
+            <nav class="primary-nav">
                 <a href="#" class="logo">
                     <img src="assets/images/logo.webp" height="51" width="52.42">
                     <span>
@@ -50,7 +50,7 @@
                         </a>
                     </li>
                     <li class="links-container">
-                        <ul class="links">
+                        <ul class="links" aria-label="Main Navigation">
                             <li><a href="#" class="active">Home</a></li>
                             <li><a href="#">Parents</a></li>
                             <li><a href="#">About Us</a></li>
@@ -163,12 +163,31 @@
             <li>Viney Court, Taunton</li>
             <li>Somerset TA1 3FB</li>
         </ul>
-        <ul>
-            <li>Managing Director - Joe Bloggs</li>
-            <li><strong>Evosite Example Site</strong></li>
-            <li>Viney Court, Taunton</li>
-            <li>Somerset TA1 3FB</li>
+        <ul class="contact">
+            <li><a href="#"><i class="fa-solid fa-phone-flip"></i>01823 470 100</a></li>
+            <li><a href="mailto:ss"><i class="fa-solid fa-envelope"></i>Email us</a></li>
+            <li><a href="#"><i class="fa-solid fa-location-pin"></i>Get Directions</a></li>
         </ul>
+        <nav class="quick-links" aria-label="Quick links">
+            <a href="#"><i class="fa-solid fa-arrow-right"></i>Quick Link One</a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i>Quick Link Two</a>
+            <a href="#" class="active"><i class="fa-solid fa-arrow-right"></i>Quick Link Three</a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i>Quick Link Four</a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i>Quick Link Five</a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i>Quick Link Six</a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i>Quick Link Seven</a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i>Quick Link Eight</a>
+            <a href="#"><i class="fa-solid fa-arrow-right"></i>Quick Link Nine</a>
+        </nav>
+        <p class="copyright">©2021 Evosite Example Site -  Registered Company Number 01234567</p>
+        <nav class="site-information" aria-label="Site information">
+            <a href="#">Sitemap</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Cookie Usage</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">High Visability Version</a>
+        </nav>
+        <p class="footer-note">Website Design by Evosite</p>
     </footer>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>
