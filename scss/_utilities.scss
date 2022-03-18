@@ -42,7 +42,7 @@
 
     .button {
         width: 95px;
-        gap:5px;
+        gap: 5px;
     }
 
     .icons {
@@ -325,14 +325,13 @@ section {
                 span {
                     display: none;
 
-                    @media (min-width:1024px)
-                    {
+                    @media (min-width:1024px) {
                         display: inline;
                     }
                 }
 
                 p {
-                    color:var(--white);
+                    color: var(--white);
                     font-size: 14px;
                     padding: 0;
                 }
@@ -342,6 +341,7 @@ section {
                 height: 258px;
                 object-fit: cover;
                 position: relative;
+                transition: 300ms;
             }
 
             a {
@@ -352,12 +352,20 @@ section {
             a:hover>h3,
             a:focus>h3,
             a:hover>h4,
-            a:focus>h4 {
-                color: var(--grey);
+            a:focus>h4,
+            a:hover>p,
+            a:focus>p{
+                color: rgb(37, 37, 37);
+                transition: 300ms;
+        
+            }
+
+            a:hover > img , a:focus > img {
+                filter: brightness(0.5);
                 transition: 300ms;
             }
 
-           .date {
+            .date {
                 color: #ACA7B2;
                 font-size: 12px;
                 font-weight: 600;
@@ -376,7 +384,7 @@ section {
                 color: var(--tertiary);
                 font-weight: 600;
                 font-size: 12px;
-                padding:20px 15px 15px 15px;
+                padding: 20px 15px 15px 15px;
             }
         }
 
@@ -405,23 +413,24 @@ section {
         }
 
         @media (min-width:1024px) {
-            width:100%;
+            width: 100%;
+
             display: grid;
             grid-template-areas: "heading buttons"
-            "swiper swiper";
+                "swiper swiper";
             grid-template-columns: 85% 1fr;
 
             h2 {
                 grid-area: heading;
                 text-align: left;
-                margin:40px 0;
+                margin: 40px 0;
             }
 
             .swiper-nav {
                 grid-area: buttons;
                 justify-content: flex-end;
                 align-items: center;
-                margin:0;
+                margin: 0;
             }
         }
     }
@@ -434,14 +443,26 @@ section {
         font-size: 14px;
         border-radius: 30px;
         margin: 46px;
+
+        &:hover, &:focus {
+            background-color: #1b3649;
+            color:var(--white);
+        }
     }
 }
 
 footer {
+    padding-bottom: 30px;
+
     .logo {
         border-bottom: 1px solid #ffffff21;
         padding-top: 48px;
         padding-bottom: 34px;
+
+        img {
+            height: 43px;
+            width: 43px;
+        }
 
         span {
             font-family: var(--merriweather);
@@ -454,29 +475,24 @@ footer {
                 &:nth-child(2) {
                     font-size: 14px;
                 }
-
-                @media (min-width:1024px) {
-                    font-size: 34px;
-
-                    &:nth-child(2) {
-                        font-size: 16px;
-                    }
-                }
             }
         }
     }
 
     ul {
         list-style: none;
-        color:var(--white);
+        color: var(--white);
         font-family: var(--montserrat);
         font-weight: 400;
         font-size: 15px;
-        margin-top:24px;
-        margin-bottom: 15px;
+
+        a {
+            font-size: inherit;
+        }
 
         li {
-            padding:5px;
+            padding: 5px;
+
         }
 
         strong {
@@ -484,36 +500,57 @@ footer {
         }
     }
 
-    .contact, .quick-links {
-        padding-bottom: 38px;
-        margin-bottom: 38px;
-        border-bottom: 1px solid #ffffff21;
-    }
-
     i {
         margin-right: 11px;
         color: #B7BDC1;
     }
 
-    .quick-links, .site-information {
+    .quick-links {
+        padding-top: 38px;
+        border-top: 1px solid #ffffff21;
+
+        @media (min-width:1024px) {
+            padding-top: 0;
+            border-top: 0;
+        }
+    }
+
+    .quick-links,
+    .site-information {
         display: flex;
         flex-direction: column;
-        gap:18px;
         font-size: 12px;
         font-weight: 400;
+
+        @media (min-width:1024px) {
+            flex-direction: row;
+        }
+    }
+
+    .site-information {
+        gap: 15px;
     }
 
     .copyright {
-        margin-bottom: 38px;
         color: var(--white);
         font-weight: 400;
         font-size: 12px;
-    }   
+        padding-top: 38px;
+        border-top: 1px solid #ffffff21;
+    }
 
     .footer-note {
-        margin: 50px 1px 20px 0px;
-        color:var(--white);
+        margin-top: 10px;
+        margin-left: 1px;
+        color: var(--white);
         font-weight: 700;
         font-size: 12px;
+
+        @media (min-width:1024px) {
+            margin: 20px;
+            margin-left: 0;
+            text-align: end;
+        }
     }
+
 }

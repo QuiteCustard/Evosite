@@ -144,4 +144,50 @@ section {
 footer {
     background-color: #2E4D63;
     padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    @media (min-width:1024px) {
+        padding:0 232px;
+        display: grid;
+        align-items: center;
+        grid-template-rows: auto 1fr auto auto;
+        grid-template-areas: 
+        "logo logo logo"
+        "address contact quick-links"
+        "copyright copyright copyright"
+        "sitemap sitemap note";
+        gap:0;
+        
+        .logo {
+            grid-area: logo;
+        }
+
+        .address {
+            grid-area: address;
+            padding:31px 0;
+        }
+
+        .contact {
+            grid-area: contact;
+        }
+
+        .quick-links {
+            grid-area: quick-links;
+            gap: 16px;
+        }
+
+        .copyright {
+            grid-area: copyright;
+        }
+
+        .site-information {
+            grid-area: sitemap;
+        }
+
+        .footer-note {
+            grid-area: note;
+        }
+    }
 }
