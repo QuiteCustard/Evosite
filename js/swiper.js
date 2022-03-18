@@ -1,15 +1,17 @@
-const swiper = new Swiper('.swiper', {
-    effect: "cube",
+let swiper = new Swiper('.swiper', {
     grabCursor: true,
-    cubeEffect: {
-        shadow: true,
-        slideShadows: true,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-    },
+    centeredSlides: false,
+    slidesPerView: 1,
+    spaceBetween: 30,
     pagination: {
-        el: '.swiper-pagination',
-    },
+      el: ".swiper-pagination",
+    },breakpoints: {
+
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+      },
 
     // Navigation arrows
     navigation: {
@@ -21,5 +23,4 @@ const swiper = new Swiper('.swiper', {
     scrollbar: {
         el: '.swiper-scrollbar',
     },
-    
 });
