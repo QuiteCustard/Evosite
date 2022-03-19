@@ -368,14 +368,6 @@ section {
                 flex-direction: column;
             }
 
-            a:hover>h3,
-            a:focus>h3,
-            a:hover>h4,
-            a:focus>h4,
-            a:hover>p,
-            a:focus>p{
-                color: rgb(37, 37, 37);
-            }
 
             a:hover > img , a:focus > img {
                 filter: brightness(0.5);
