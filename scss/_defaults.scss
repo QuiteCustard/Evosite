@@ -12,6 +12,7 @@
 html {
     scroll-behavior: smooth;
     box-sizing: border-box;
+    cursor: url('../assets/images/cursor.cur'), pointer;
 }
 
 *,
@@ -23,6 +24,7 @@ html {
 * {
     padding: 0;
     margin: 0;
+    
 }
 
 @import '_typography';
