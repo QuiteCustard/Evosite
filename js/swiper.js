@@ -11,6 +11,9 @@ let swiper = new Swiper('.swiper', {
           slidesPerView: 2,
           spaceBetween: 50,
         },
+        1700: {
+          slidesPerView: 4,
+        }
       },
 
     // Navigation arrows

@@ -14,18 +14,7 @@ header {
         justify-content: space-between;
         flex-direction: column;
         height: 100%;
-        position: relative;
-
-
-        &::before {
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            content: '';
-            top: 0;
-            left: 0;
-            backdrop-filter: brightness(0.7);
-        }
+        backdrop-filter: brightness(0.7);
 
         &>* {
             z-index: 1;
@@ -35,8 +24,6 @@ header {
             padding: 1rem;
             gap: 434px;
         }
-
-        @media(mi){}
     }
 }
 
@@ -160,7 +147,7 @@ footer {
         "sitemap sitemap note";
         gap:0;
         
-        .logo {
+        .logo-wrapper {
             grid-area: logo;
         }
 

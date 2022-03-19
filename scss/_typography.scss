@@ -11,6 +11,7 @@ a {
     font-weight: 400;
     font-size: 15px;
     color: var(--white);
+    position: relative;
 
     &:hover,
     &:focus {
@@ -19,6 +20,31 @@ a {
 
     @media (min-width:1024px){
         font-size: 16px;
+    }
+
+}
+
+.link {
+    position: relative;
+    padding-bottom:3px;
+
+    &::after {
+        position: absolute;
+        bottom:0;
+        left:0;
+        height:1px;
+        width: 100%;
+        content: '';
+        transform: scaleX(0);
+        content: '';
+        border-bottom: solid 3px var(--tertiary);  
+        transition: transform 250ms ease-in-out;
+        z-index: 1;
+   
+    }
+
+    &:hover::after {
+        transform: scale(0.7);
     }
 }
 
