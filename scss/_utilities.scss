@@ -504,7 +504,9 @@ footer {
 
         li {
             padding: 5px;
-
+            @media (min-width:1024px){
+                padding:0;
+            }
         }
 
         strong {
@@ -524,6 +526,7 @@ footer {
         @media (min-width:1024px) {
             padding-top: 0;
             border-top: 0;
+            flex-wrap: wrap;
         }
     }
 
